@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Universal Picture in Picture Hijacker ( UPIPH )",
+  "version": "1.0",
+  "author": "Alticrux",
+  "description": "Force any web video into Picture-in-Picture mode.",
+  "icons": {
+    "16": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "all_frames": true
+    }
+  ]
+}
